@@ -36,8 +36,8 @@ public class Serial {
                 OutputStream out = serialPort.getOutputStream();
                 
                  //읽기, 쓰기 쓰레드 작동
-                //(new Thread(new SerialReader(in))).start();
-                //(new Thread(new SerialWriter(out))).start();
+                (new Thread(new SerialReader(in))).start();
+                (new Thread(new SerialWriter(out))).start();
 
             }
             else
